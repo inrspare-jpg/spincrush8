@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spin Crush Lucky Wheel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0b0b0f;
+      --panel: #181820;
+      --line: rgba(255, 255, 255, 0.1);
+      --text: #f1f1f1;
+      --muted: #aaa;
+      --gold: #f9d85e;
+      --accent: #7a5cff;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      background: var(--panel);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.4rem;
+      padding: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .banner {
+      width: 100%;
+      max-width: 700px;
+      aspect-ratio: 7 / 4;
+      margin: 0 auto 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #222;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .intro h2 {
+      color: var(--gold);
+      font-size: 1.6rem;
+      margin-bottom: 6px;
+    }
+
+    .intro p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    /* 表格样式 */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      font-size: clamp(0.75rem, 2.5vw, 0.95rem);
+      table-layout: fixed;
+    }
+
+    th, td {
+      padding: clamp(6px, 2vw, 12px);
+      border: 1px solid var(--line);
+      word-wrap: break-word;
+    }
+
+    th {
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    td {
+      background: #12121a;
+    }
+
+    tr:nth-child(even) td {
+      background: #171722;
+    }
+
+    /* 自动缩放列宽 */
+    th:nth-child(1), td:nth-child(1) { width: 25%; }
+    th:nth-child(2), td:nth-child(2) { width: 25%; }
+    th:nth-child(3), td:nth-child(3) { width: 25%; }
+    th:nth-child(4), td:nth-child(4) { width: 25%; }
+
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 0.85rem;
+      padding: 30px 0;
+    }
+
+    @media (max-width: 480px) {
+      header { font-size: 1.2rem; padding: 16px; }
+      .intro h2 { font-size: 1.3rem; }
+      .intro p { font-size: 0.9rem; }
+      th, td { padding: 6px; }
+      table { font-size: 0.8rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>Spin Crush Lucky Wheel</header>
+
+<div class="container">
+
+  <div class="banner">
+    <img src="https://prosafeimg.s3.ap-south-1.amazonaws.com/uploads/20251028/6900d53583840.png" alt="Lucky Wheel Banner">
+  </div>
+
+  <div class="intro">
+    <h2>Spin & Win up to ₹5000!</h2>
+    <p>
+      Each deposit tier gives you one Lucky Wheel spin!  
+      Unlock <b>Silver</b>, <b>Gold</b>, and <b>Diamond</b> to access the <b>Special</b> wheel —  
+      where you can win the top prize of <strong>₹5000!</strong>
+    </p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Silver</th>
+          <th>Gold</th>
+          <th>Diamond</th>
+          <th>Special</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>₹55</td><td>₹1,100</td><td>₹15,000</td><td>₹80,000</td></tr>
+        <tr><td>₹110</td><td>₹2,000</td><td>₹20,000</td><td>₹90,000</td></tr>
+        <tr><td>₹200</td><td>₹3,000</td><td>₹25,000</td><td>₹100,000</td></tr>
+        <tr><td>₹300</td><td>₹4,000</td><td>₹30,000</td><td>₹110,000</td></tr>
+        <tr><td>₹400</td><td>₹5,000</td><td>₹35,000</td><td>₹120,000</td></tr>
+        <tr><td>₹500</td><td>₹6,000</td><td>₹40,000</td><td>₹130,000</td></tr>
+        <tr><td>₹600</td><td>₹7,000</td><td>₹45,000</td><td>₹140,000</td></tr>
+        <tr><td>₹700</td><td>₹8,000</td><td>₹50,000</td><td>₹150,000</td></tr>
+        <tr><td>₹800</td><td>₹9,000</td><td>₹55,000</td><td>₹160,000</td></tr>
+        <tr><td>₹900</td><td>₹10,000</td><td>₹60,000</td><td>₹170,000</td></tr>
+        <tr><td>₹1,000</td><td>₹11,000</td><td>₹65,000</td><td>₹180,000</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<footer>© <span id="y"></span> Spin Crush. All rights reserved.</footer>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
